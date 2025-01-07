@@ -139,7 +139,7 @@ EXTRAS_REQUIRE = {
 
 setup(
     name="scraping-orbit",
-    version="0.0.2",
+    version="0.0.3",
     author="Thiago Silva",
     author_email="",
     description="Tools for web-scraping and automation projects.",
