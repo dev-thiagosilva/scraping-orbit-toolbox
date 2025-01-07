@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from PyPDF2 import PdfReader
 import pdfkit
 
-from scraping_orbit.computer_vision.conversions.pdf import pdf_to_images
+from scraping_orbit.utils.computer_vision.conversions.pdf import pdf_to_images
 from scraping_orbit.utils import code_creation
 
 # Global paths

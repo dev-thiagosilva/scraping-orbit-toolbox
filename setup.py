@@ -12,7 +12,7 @@ REQUIRED_PKGS = [
     'pandas',
     'pyarrow',
     'requests',
-    'streamlit==1.37.0',
+    'streamlit>=1.37.0',
     'xlrd',
     "opencv-contrib-python==4.10.0.82",
     "opencv-python==4.10.0.82",
@@ -102,7 +102,7 @@ EXTRAS_REQUIRE = {
         , "scikit-learn"
         , "shapely"
         , "six"
-        , "streamlit==1.37.0"
+        , "streamlit>=1.37.0"
         , "tabula-py"
         , "tensorboard"
         , "tensorboard-data-server"

@@ -1,7 +1,7 @@
 import os
 import traceback
 import pandas as pd
-from scraping_orbit.data.dataframe_functions import concat_dataframes_v2
+from scraping_orbit.utils.data.dataframe_functions import concat_dataframes_v2
 
 
 def merge_data_files(file_list: list,

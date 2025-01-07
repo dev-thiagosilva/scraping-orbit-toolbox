@@ -11,7 +11,7 @@ from pathlib import Path
 import pandas as pd
 
 import scraping_orbit.utils.code_creation
-from scraping_orbit.data.data_merger import merge_data_files
+from scraping_orbit.utils.data.data_merger import merge_data_files
 from scraping_orbit.utils import splitters
 
 

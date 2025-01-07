@@ -3,9 +3,7 @@ import json
 import logging
 import multiprocessing
 import os
-import random
 import re
-import time
 import traceback
 from pathlib import Path
 from urllib.parse import urlparse
@@ -13,13 +11,10 @@ from urllib.parse import urlparse
 import boto3
 import numpy as np
 import pandas as pd
-import pyarrow as pa
 
-from scraping_orbit.data.dataframe_functions import force_pyarrow_schema_and_save_file
-from scraping_orbit.mongodb import mongodb_functions as internal_mongo_functions
-from scraping_orbit.parsing.string_parsers import remove_accents as string_parsers_remove_accents
+from scraping_orbit.utils.parsing.string_parsers import remove_accents as string_parsers_remove_accents
 from scraping_orbit.utils.code_creation import create_random_code, \
-    create_random_file_name, create_custom_hashid
+    create_random_file_name
 
 logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
 
