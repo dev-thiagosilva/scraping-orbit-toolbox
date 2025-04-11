@@ -72,7 +72,7 @@ def merge_data_files(file_list: list,
                 print(f"Error deleting {file}: {e}")
 
     try:
-        merged_df = concat_dataframes_v2(dfs=dataframe_list)
+        merged_df = concat_dataframes_v2(df_list=dataframe_list)
         if drop_duplicates:
             if not drop_duplicates_column:
                 merged_df.drop_duplicates(inplace=True)

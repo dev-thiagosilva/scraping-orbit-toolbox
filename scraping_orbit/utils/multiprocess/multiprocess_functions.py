@@ -99,8 +99,8 @@ def execute_multiprocess_with_results(parameters_list: list,
         DataFrame or dict or list: Merged results from the processes.
 
     """
-    folder_code = f"temp_mp_process_{scraping_orbit.utils.code_creation.create_new_date_collected_code()}_" \
-                  f"{scraping_orbit.utils.code_creation.create_random_code(max_index=4)}"
+    folder_code = f"temp_mp_process_{scraping_orbit.utils.code_creation.create_random_file_name()}_" \
+                  f"{scraping_orbit.utils.code_creation.create_random_code(length=4)}"
     output_dir = Path(__file__).resolve().parent / 'generated_outputs' / folder_code
     output_dir.mkdir(parents=True, exist_ok=True)
     save_dir = str(output_dir)
@@ -222,7 +222,7 @@ def example_target_function(parameters_list, output_dir):
     """
     results = []
     for parameter in parameters_list:
-        random_code = scraping_orbit.utils.code_creation.create_random_code(max_index=2)
+        random_code = scraping_orbit.utils.code_creation.create_random_code(length=2)
         results.append({'arg_number_received': parameter['arg1'], 'some_processed_value': random_code})
 
     df = pd.DataFrame(results)
